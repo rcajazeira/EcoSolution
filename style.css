@@ -62,3 +62,11 @@ body {
     }
 }
 
+  /* Ajustes específicos para a main */
+   .section-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+
+
+
