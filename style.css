@@ -8,3 +8,57 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Responsividade Mobile */
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem !important;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        order: 3;
+    }
+
+    .mobile-menu-btn {
+        display: block !important;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        z-index: 10;
+    }
+
+    header .flex.items-center.space-x-4 {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .search-input {
+        width: 100% !important;
+    }
+
+    .logo-font {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    .main-nav.active {
+        display: flex;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}
+
