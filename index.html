@@ -4,62 +4,98 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <title>Eco Solution</title>
   </head>
   <body class="bg-white">
     <header class="bg-green-700 text-white p-4 shadow-md">
       <div class="container mx-auto flex items-center justify-between">
-         <button class="mobile-menu-btn hidden text-2xl" onclick="toggleMenu()">
-                ☰
-            </button>
+        <button class="mobile-menu-btn hidden text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
 
         <div class="text-3xl font-bold logo-font flex items-center">
-           <a href="index.html" class="flex items-center">
-                    <span class="material-icons text-4xl mr-2 text-green-300">eco</span>
-                    <span>Eco<span class="text-green-300">Solution</span></span>
-                </a>
-            </div>
-
-        <nav class="main-nav flex items-center space-x-6 text-sm">
-                <a class="hover:text-green-300 transition-colors" href="quem-somos.html">Quem somos</a>
-                <a class="hover:text-green-300 transition-colors" href="creditos-carbono.html">Créditos de Carbono</a>
-                <a class="hover:text-green-300 transition-colors" href="mercado.html">Mercado</a>
-                <a class="hover:text-green-300 transition-colors" href="ranking.html">Ranking</a>
-                <a class="hover:text-green-300 transition-colors" href="planos.html">Planos</a>
-                <a class="font-semibold border-b-2 border-green-300 pb-1 text-green-300" href="index.html">Calculadora CO2</a>
-            </nav>
-
-        <div class="flex items-center space-x-4 text-sm md:text-xs">
-                <div class="flex items-center space-x-1">
-                    <a class="hover:text-green-300 text-xs font-medium" href="#">PT</a>
-                    <span class="text-xs text-green-400">|</span>
-                    <a class="text-green-300 hover:text-white text-xs font-medium" href="#">EN</a>
-                </div>
-
-                <div class="relative">
-                    <input class="search-input bg-green-600 text-white placeholder-green-300 rounded-full py-2 px-4 text-xs focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-green-500 transition-colors w-48 md:w-full" placeholder="Buscar..." type="text"/>
-                    <span class="material-icons absolute right-3 top-1/2 transform -translate-y-1/2 text-green-300 text-base">search</span>
-                </div>
-                <a class="hover:text-green-300 font-medium transition-colors" href="criar-conta.html">Criar Conta</a>
-                <a href="login.html" class="bg-green-500 hover:bg-green-400 text-white py-2 px-4 rounded-full text-sm md:text-xs font-medium transition-colors">Login</a>
-            </div>
+          <a href="index.html" class="flex items-center">
+            <span class="material-icons text-4xl mr-2 text-green-300">eco</span>
+            <span>Eco<span class="text-green-300">Solution</span></span>
+          </a>
         </div>
 
-</header>
+        <nav class="main-nav flex items-center space-x-6 text-sm">
+          <a
+            class="hover:text-green-300 transition-colors"
+            href="quem-somos.html"
+            >Quem somos</a
+          >
+          <a
+            class="hover:text-green-300 transition-colors"
+            href="creditos-carbono.html"
+            >Créditos de Carbono</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="mercado.html"
+            >Mercado</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="ranking.html"
+            >Ranking</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="planos.html"
+            >Planos</a
+          >
+          <a
+            class="font-semibold border-b-2 border-green-300 pb-1 text-green-300"
+            href="index.html"
+            >Calculadora CO2</a
+          >
+        </nav>
 
-    <main>
+        <div class="flex items-center space-x-4 text-sm md:text-xs">
+          <div class="flex items-center space-x-1">
+            <a class="hover:text-green-300 text-xs font-medium" href="#">PT</a>
+            <span class="text-xs text-green-400">|</span>
+            <a
+              class="text-green-300 hover:text-white text-xs font-medium"
+              href="#"
+              >EN</a
+            >
+          </div>
 
-    </main>
-     <script>
-        function toggleMenu() {
-            const nav = document.querySelector('.main-nav');
-            nav.classList.toggle('active');
-        }
+          <div class="relative">
+            <input
+              class="search-input bg-green-600 text-white placeholder-green-300 rounded-full py-2 px-4 text-xs focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-green-500 transition-colors w-48 md:w-full"
+              placeholder="Buscar..."
+              type="text"
+            />
+            <span
+              class="material-icons absolute right-3 top-1/2 transform -translate-y-1/2 text-green-300 text-base"
+              >search</span
+            >
+          </div>
+          <a
+            class="hover:text-green-300 font-medium transition-colors"
+            href="criar-conta.html"
+            >Criar Conta</a
+          >
+          <a
+            href="login.html"
+            class="bg-green-500 hover:bg-green-400 text-white py-2 px-4 rounded-full text-sm md:text-xs font-medium transition-colors"
+            >Login</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".main-nav");
+        nav.classList.toggle("active");
+      }
     </script>
-
   </body>
 </html>
