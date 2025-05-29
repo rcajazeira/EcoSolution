@@ -197,6 +197,42 @@
         const nav = document.querySelector(".main-nav");
         nav.classList.toggle("active");
       }
+      //calculadora de CO2
+      // Função para alternar o menu mobile
+        function toggleMenu() {
+            const nav = document.querySelector('.main-nav');
+            nav.classList.toggle('active');
+        }
+        
+        // Função para calcular a pegada de carbono
+        function calculateCarbonFootprint() {
+            // Valores dos inputs
+            const transporte = parseFloat(document.getElementById('transporte').value) || 0;
+            const energia = parseFloat(document.getElementById('energia').value) || 0;
+            const alimentacao = parseFloat(document.getElementById('alimentacao').value) || 0;
+
+            // Fatores de emissão (exemplo)
+            const fatorTransporte = 0.2; // kg CO2e por km
+            const fatorEnergia = 0.5;    // kg CO2e por kWh
+            const fatorAlimentacao = 10; // kg CO2e por porção
+
+            // Cálculo
+            const total = 
+                (transporte * 20 * fatorTransporte) + // 20 dias úteis
+                (energia * fatorEnergia) +
+                (alimentacao * 4 * fatorAlimentacao); // 4 semanas no mês
+
+            // Exibir resultado
+            document.getElementById('totalFootprint').textContent = total.toFixed(2);
+            document.getElementById('resultadoCalculo').classList.remove('hidden');
+            
+            // Rolar suavemente para o resultado
+            document.getElementById('resultadoCalculo').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+        
     </script>
   </body>
 </html>
