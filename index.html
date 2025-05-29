@@ -126,28 +126,40 @@
                             <p class="text-xs text-gray-500 mt-1 text-left">Distância média que você percorre diariamente (ida e volta).</p>
                         </div>
         
+        <div> 
+                            <label class="block text-base md:text-md font-medium text-gray-700 mb-2 text-left flex items-center" for="energia">
+                                <span class="material-icons text-green-600 mr-2">electrical_services</span>
+                                Energia Elétrica Mensal (kWh):
+                            </label>
+                            <input class="w-full p-3 md:p-4 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-base md:text-lg" id="energia" name="energia" placeholder="Ex: 150" type="number" min="0">
+                            <p class="text-xs text-gray-500 mt-1 text-left">Seu consumo mensal de energia, conforme sua conta de luz.</p>
+                        </div>
         <div>
-          <label for=""><span>electrical_services</span>Energia Elétrica Mensal (kWh):</label>
-          <input type="text" placeholder="Ex: 150">
-          <p>Seu consumo mensal de energia, conforme sua conta de luz.</p>
-        </div>
-        <div>
-          <label for=""><span>restaurant</span>Carne Vermelha Semanal (porções):</label>
-          <input type="text" placeholder="Ex: 3">
-          <p>Número de porções de carne vermelha que você consome por semana.</p>
-        </div>
-        <button><span>analytics</span>Calcular Minha Pegada</button>
+                            <label class="block text-base md:text-md font-medium text-gray-700 mb-2 text-left flex items-center" for="alimentacao">
+                                <span class="material-icons text-green-600 mr-2">restaurant</span>
+                                Carne Vermelha Semanal (porções):
+                            </label>
+                            <input class="w-full p-3 md:p-4 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 text-base md:text-lg" id="alimentacao" name="alimentacao" placeholder="Ex: 3" type="number" min="0">
+                             <p class="text-xs text-gray-500 mt-1 text-left">Número de porções de carne vermelha que você consome por semana.</p>
+                        </div>
+        <button class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 md:py-4 px-6 rounded-md shadow-md transition-colors duration-300 text-base md:text-lg lg:text-xl flex items-center justify-center" onclick="calculateCarbonFootprint()" type="button">
+                            <span class="material-icons mr-2">analytics</span>
+                            Calcular Minha Pegada
+                        </button>
         </form>
-        <div>
-          <h3>Sua Pegada de Carbono Estimada:</h3>
-          <p><span>0.00</span>kg CO<sub>2</sub>e / mês
-</p>
-<p>Esta é uma estimativa do seu impacto mensal. Lembre-se, pequenas mudanças de hábitos podem levar a grandes reduções!
-<a href="">Saiba como compensar suas emissões.</a></p>
-        </div>
-        </div>
-        </div>
-       </section>
+                    <div class="mt-6 md:mt-8 lg:mt-10 p-4 md:p-6 bg-green-50 rounded-md hidden" id="resultadoCalculo">
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-green-700 mb-3">Sua Pegada de Carbono Estimada:</h3>
+                        <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-green-600">
+                            <span id="totalFootprint">0.00</span> kg CO<sub>2</sub>e / mês
+                        </p>
+                        <p class="text-xs md:text-sm text-gray-600 mt-3">
+                            Esta é uma estimativa do seu impacto mensal. Lembre-se, pequenas mudanças de hábitos podem levar a grandes reduções!
+                            <a href="creditos-carbono.html" class="text-green-600 hover:underline font-semibold">Saiba como compensar suas emissões.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
        <!-- Seção 3: Citação + Laptop -->
           <section>
             <div>
