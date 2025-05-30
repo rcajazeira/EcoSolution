@@ -100,6 +100,100 @@ body {
             .card-icon {
                 font-size: 3.5rem !important;
             }
+
+             /* Estilos para o footer */
+    footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .social-icon {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        transform: translateY(-3px);
+        filter: brightness(1.2);
+    }
+    
+    .chat-button span {
+        transition: all 0.4s ease;
+    }
+    
+    /* Estilos para o botão flutuante */
+    .floating-button {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .floating-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+    
+    .whatsapp-button {
+        transition: all 0.3s ease;
+    }
+    
+    .whatsapp-button:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Media queries para responsividade */
+    @media (max-width: 768px) {
+        .grid-cols-1 {
+            grid-template-columns: 1fr;
+        }
+        
+        .md\:grid-cols-3 {
+            grid-template-columns: 1fr;
+        }
+        
+        .footer-section {
+            text-align: center;
+        }
+        
+        .social-links {
+            justify-content: center;
+        }
+        
+        .newsletter-form {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .copyright-section {
+            padding-top: 1.5rem;
+        }
+        
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .whatsapp-button {
+            bottom: 5.5rem;
+            right: 1.5rem;
+        }
+        
+        .chat-button {
+            bottom: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .newsletter-form {
+            width: 100%;
+        }
+        
+        .contact-info p {
+            font-size: 0.9rem;
+        }
+    }
         
 
 
