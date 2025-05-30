@@ -319,6 +319,33 @@
             });
         }
 
+          // Atualiza o ano atual no copyright
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Animação para o botão de chat
+    const chatButton = document.querySelector('.chat-button');
+    chatButton.addEventListener('click', function() {
+        alert('Olá! Como podemos ajudar você hoje?');
+    });
+    
+    // Validação simples do formulário de newsletter
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = this.querySelector('input[type="text"]');
+            const emailInput = this.querySelector('input[type="email"]');
+            
+            if (!nameInput.value.trim() || !emailInput.value.trim()) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+            
+            alert('Obrigado por assinar nossa newsletter!');
+            this.reset();
+        });
+    }
+
     </script>
   </body>
 </html>
