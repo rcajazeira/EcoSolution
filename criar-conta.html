@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+
+    <title>Criar Conta - EcoSolution</title>
+  </head>
+  <body class="bg-white">
+    <header class="bg-green-700 text-white p-4 shadow-md">
+      <div class="container mx-auto flex items-center justify-between">
+        <button class="mobile-menu-btn hidden text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
+
+        <div class="text-3xl font-bold logo-font flex items-center">
+          <a href="index.html" class="flex items-center">
+            <span class="material-icons text-4xl mr-2 text-green-300">eco</span>
+            <span>Eco<span class="text-green-300">Solution</span></span>
+          </a>
+        </div>
+
+        <nav class="main-nav flex items-center space-x-6 text-sm">
+          <a
+            class="hover:text-green-300 transition-colors"
+            href="quemsomos.html"
+            >Quem somos</a
+          >
+          <a
+            class="hover:text-green-300 transition-colors"
+            href="creditosdecarbono.html"
+            >Créditos de Carbono</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="mercado.html"
+            >Mercado</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="ranking.html"
+            >Ranking</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="planos.html"
+            >Planos</a
+          >
+          <a
+            class="font-semibold border-b-2 border-green-300 pb-1 text-green-300"
+            href="index.html"
+            >Calculadora CO2</a
+          >
+        </nav>
+
+        <div class="flex items-center space-x-4 text-sm md:text-xs">
+          <div class="flex items-center space-x-1">
+            <a class="hover:text-green-300 text-xs font-medium" href="#">PT</a>
+            <span class="text-xs text-green-400">|</span>
+            <a
+              class="text-green-300 hover:text-white text-xs font-medium"
+              href="#"
+              >EN</a
+            >
+          </div>
+
+          <div class="relative">
+            <input
+              class="search-input bg-green-600 text-white placeholder-green-300 rounded-full py-2 px-4 text-xs focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-green-500 transition-colors w-48 md:w-full"
+              placeholder="Buscar..."
+              type="text"
+            />
+            <span
+              class="material-icons absolute right-3 top-1/2 transform -translate-y-1/2 text-green-300 text-base"
+              >search</span
+            >
+          </div>
+          <a
+            class="hover:text-green-300 font-medium transition-colors"
+            href="criar-conta.html"
+            >Criar Conta</a
+          >
+          <a
+            href="login.html"
+            class="bg-green-500 hover:bg-green-400 text-white py-2 px-4 rounded-full text-sm md:text-xs font-medium transition-colors"
+            >Login</a
+          >
+        </div>
+      </div>
+    </header>
+
+ <!-- CONTEÚDO PRINCIPAL DA PÁGINA DE CRIAR CONTA -->
+<main class="flex items-center justify-center min-h-[calc(100vh-160px)] py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-2xl">
+        <div>
+            <div class="flex justify-center">
+                 <span class="material-icons text-6xl text-green-600">person_add</span>
+            </div>
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                Crie sua Conta Gratuita
+            </h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                Junte-se à comunidade EcoSolution! Já tem uma conta?
+                <a href="login.html" class="font-medium text-green-600 hover:text-green-500">
+                    Faça login
+                </a>
+            </p>
+        </div>
+        <form class="mt-8 space-y-6" action="#" method="POST" onsubmit="event.preventDefault(); alert('Funcionalidade de criação de conta não implementada neste protótipo.');">
+            <div>
+                <label for="full-name" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                <input id="full-name" name="full-name" type="text" autocomplete="name" required
+                       class="mt-1 appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                       placeholder="Seu nome completo">
+            </div>
+            <div>
+                <label for="email-address-register" class="block text-sm font-medium text-gray-700">Email</label>
+                <input id="email-address-register" name="email" type="email" autocomplete="email" required
+                       class="mt-1 appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                       placeholder="seu@email.com">
+            </div>
+            <div>
+                <label for="password-register" class="block text-sm font-medium text-gray-700">Senha</label>
+                <input id="password-register" name="password" type="password" autocomplete="new-password" required
+                       class="mt-1 appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                       placeholder="Crie uma senha forte">
+            </div>
+             <div>
+                <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirmar Senha</label>
+                <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required
+                       class="mt-1 appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                       placeholder="Repita a senha">
+            </div>
+
+            <div class="flex items-center">
+                <input id="terms-conditions" name="terms-conditions" type="checkbox" required
+                       class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                <label for="terms-conditions" class="ml-2 block text-xs text-gray-700">
+                    Eu concordo com os <a href="#" class="font-medium text-green-600 hover:text-green-500" onclick="alert('Página de Termos não implementada.'); return false;">Termos de Serviço</a> e <a href="#" class="font-medium text-green-600 hover:text-green-500" onclick="alert('Página de Privacidade não implementada.'); return false;">Política de Privacidade</a>.
+                </label>
+            </div>
+
+            <div>
+                <button type="submit"
+                        class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                    Criar Conta
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+
+
+
+<!--  iniciando o rodapé -->
+     <footer class="bg-gray-800 text-gray-300 py-12">
+     <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            <!-- Coluna 1: Logo e Redes Sociais -->
+            <div class="text-center md:text-left">
+                <div class="text-3xl font-bold logo-font flex justify-center md:justify-start items-center mb-4">
+                    <a href="index.html" class="flex items-center text-white">
+                        <span class="material-icons text-4xl mr-2 text-green-400">eco</span>
+                        <span>Eco<span class="text-green-400">Solution</span></span>
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400 mb-6 md:mb-4">Liderando o caminho para um futuro sustentável com soluções inovadoras em pegada de carbono.</p>
+                <div class="flex space-x-4 justify-center md:justify-start">
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                         <img alt="Facebook icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFFr1P5D0h4u_JZra_-kIKrPNIjL4nM7yQWqtakuTpfQUJiyhkBm0CW-RBV7zpythuWSRWAC-3Wgz-bGgqylqmRWNF6ln2_Vdfwo0XhHN4ybszfMEMrL4ayJSIlN0cZxsfkzy4FDArvXtPll0yxnY5lkbgdicWfTDnZ1YTrB-WwmB2sS5q1tFuH3RK1F5gDIwVW4LyXzmSZoc-6mZ_R6hmaQ-shq-v7RtwEZiyeVD-jnPwETztbYvSAyl97EhyiEOB7YFm6_ANhwK8">
+                    </a>
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                        <img alt="Twitter icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_HOkPbg2UisC212XHLYNa5CDykAjXJDpk2KZT0YViSJ-tXjgULYtB1KTEh6OcY5VRoNV-pinz1BrWwZfqhwgBK_VIywPf6VvNnXYZ8GjztU8-Pdzt5KoQSbJ4v9Q2rm3g07NBFKbCeglDFcRUZg7zpRhZg5r_ltubYCr0EQGEpoRqA7COhBsapdDwhKDXC5FP6Wc2lISlJ8RG5A3aqXZzuwKi3ZysM-GWwG5NRnwbsaKu7cl-OVqc49qCsPhvSyxVO53uY5Jj6txy">
+                    </a>
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                        <img alt="Instagram icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEk6Fi-PqtPA_EkHhR0wfpaevuyop1Af1O-vactqxNgQ4qvMSe8l_OSaw03vTN6bKbm3u3OD5xm76vE_grEFAaA1xEJclUIRFGCK4mCtQVV7nx6TgMMkCOmBlxeCyq-I99UtI14itCV33muDk25sO7L44fkeM7_qJQ-8Mpt4xtD0gpBeKztFwv8xouv9JY_G0EfEz5qF7Tu9Jo5tVQZNkrRBNN9s1wwPjcVwV2BNV5wd5V7Eld2J9VjEkyeT-4pFVpDP1OQiS-qMBX">
+                    </a>
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                        <img alt="LinkedIn icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIfo9XP4wg3pElg5XxWcoJVch46YDaJLBKI7tQsMjQpn0s0g4o4mv4FNOB5h7BOPHMpClm3b_gZgbQuu5QqBamlsX6oG61uvx4opjREdeCkamcZrJPwXQzz2RFcs9wSNm0clF2mBq12ngmYhlu3riZHx1w4SZS9Iq7MqF-NmSAnyfqwP0AuMKCFn9OpJjCooe5U4NPxd15NkvgM-FNlDfmGXySo0OUrdze2YzhZwqyL8_0G2tTpMO6FQplY3efohVtTWhwz_DqZxeL">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Newsletter -->
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold text-white mb-6">Assine nossa newsletter</h4>
+                <form class="flex flex-col space-y-3 newsletter-form">
+                    <input class="bg-gray-700 text-gray-300 placeholder-gray-500 rounded-md py-2.5 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-gray-600 transition-colors" placeholder="Digite seu nome" type="text">
+                    <input class="bg-gray-700 text-gray-300 placeholder-gray-500 rounded-md py-2.5 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-gray-600 transition-colors" placeholder="Digite seu email" type="email">
+                    <button class="bg-green-600 hover:bg-green-500 text-white py-2.5 px-4 rounded-md text-sm font-semibold transition-colors" type="submit">ENVIAR</button>
+                </form>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold text-white mb-6">Contato</h4>
+                <div class="space-y-2">
+                    <p class="flex items-start justify-center md:justify-start">
+                        <span class="material-icons text-green-400 mr-2 text-sm">place</span>
+                        <span>Rua do Senac Casa do Comércio, 300,<br>Caminho das Árvores, Salvador - BA</span>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <span class="material-icons text-green-400 mr-2 text-sm">phone</span>
+                        <span>+55 71 3232-3000</span>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <span class="material-icons text-green-400 mr-2 text-sm">email</span>
+                        <span>contato@ecosolution.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Copyright e créditos -->
+        <div class="border-t border-gray-700 pt-8 text-center">
+            <div class="mb-6">
+                <p class="text-sm text-gray-400 mb-3">Idealizador: Rafael Cajazeira Programador Fullstack</p>
+                <a href="https://www.linkedin.com/in/rafael-cajazeira-a24314b9/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                    <img src="desenv.jpg" alt="Logo Rafael Cajazeira Programador Fullstack" class="h-12 sm:h-14 md:h-16 mx-auto hover:opacity-80 transition-opacity">
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">EcoSolution © <span id="currentYear"></span> Todos os direitos reservados.</p>
+        </div>
+    </div>
+     </footer>
+
+     <!-- finalizando com botões -->
+    
+    <div class="fixed bottom-24 right-6 z-50 whatsapp-button">
+    <a href="https://wa.me/557132323000" rel="noopener noreferrer" target="_blank">
+        <img alt="WhatsApp icon" class="h-14 w-14 rounded-full shadow-xl cursor-pointer hover:opacity-80 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbOamQjb41njKk3pGtr9zBH6-fKyUUfHoT48OEtPdaeq-Z9wHqPTJRIV-e7evi3yHjsfccO-szqT2O_uuTrOSb6alw7dfhlTN-lAaoC83f8FIgSfCJwzgFwSeTd9rWqb5jTSpfivxyjW9KFLODNuS6SCcGJLtkxeqtP_l5h4x9U1mGPBX3wcErT4lAafFHnzyp3dCsyayxRRX6uQun5Jk_ToobJwEYYi-Ahe3WT2dsHJxo8NdTCVRzEiskeG3pjDNeukclNxNduS7m">
+    </a>
+</div>
+
+<button class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl flex items-center space-x-2 group transition-all duration-300 ease-in-out z-50 floating-button chat-button">
+    <span class="material-icons">chat</span>
+    <span class="text-sm hidden md:inline group-hover:max-w-xs group-hover:px-2 max-w-0 overflow-hidden transition-all duration-300 ease-in-out">Olá, posso ajudar?</span>
+</button>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".main-nav");
+        nav.classList.toggle("active");
+      }
+      //calculadora de CO2
+      // Função para alternar o menu mobile
+        function toggleMenu() {
+            const nav = document.querySelector('.main-nav');
+            nav.classList.toggle('active');
+        }
+        
+        // Função para calcular a pegada de carbono
+        function calculateCarbonFootprint() {
+            // Valores dos inputs
+            const transporte = parseFloat(document.getElementById('transporte').value) || 0;
+            const energia = parseFloat(document.getElementById('energia').value) || 0;
+            const alimentacao = parseFloat(document.getElementById('alimentacao').value) || 0;
+
+            // Fatores de emissão (exemplo)
+            const fatorTransporte = 0.2; // kg CO2e por km
+            const fatorEnergia = 0.5;    // kg CO2e por kWh
+            const fatorAlimentacao = 10; // kg CO2e por porção
+
+            // Cálculo
+            const total = 
+                (transporte * 20 * fatorTransporte) + // 20 dias úteis
+                (energia * fatorEnergia) +
+                (alimentacao * 4 * fatorAlimentacao); // 4 semanas no mês
+
+            // Exibir resultado
+            document.getElementById('totalFootprint').textContent = total.toFixed(2);
+            document.getElementById('resultadoCalculo').classList.remove('hidden');
+            
+            // Rolar suavemente para o resultado
+            document.getElementById('resultadoCalculo').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+          // Atualiza o ano atual no copyright
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Animação para o botão de chat
+    const chatButton = document.querySelector('.chat-button');
+    chatButton.addEventListener('click', function() {
+        alert('Olá! Como podemos ajudar você hoje?');
+    });
+    
+    // Validação simples do formulário de newsletter
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = this.querySelector('input[type="text"]');
+            const emailInput = this.querySelector('input[type="email"]');
+            
+            if (!nameInput.value.trim() || !emailInput.value.trim()) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+            
+            alert('Obrigado por assinar nossa newsletter!');
+            this.reset();
+        });
+    }
+
+    </script>
+  </body>
+</html>
