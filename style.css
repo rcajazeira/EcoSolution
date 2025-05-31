@@ -194,6 +194,49 @@ body {
             font-size: 0.9rem;
         }
     }
+
+     /* Estilos para os troféus */
+      .silver-trophy {
+        color: #c0c0c0; /* Cor prata */
+        filter: drop-shadow(0 2px 4px rgba(192, 192, 192, 0.5));
+      }
+      
+      .bronze-trophy {
+        color: #cd7f32; /* Cor bronze */
+        filter: drop-shadow(0 2px 4px rgba(205, 127, 50, 0.4));
+      }
+      
+      /* Estilo para os logos das empresas */
+      .company-logo {
+        border: 2px solid #e5e7eb;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        transition: all 0.3s ease;
+      }
+      
+      .company-logo:hover {
+        transform: scale(1.05);
+        border-color: #10b981;
+      }
+      
+      .logo-ecoalpha {
+        background-color: #22c55e; /* Verde */
+      }
+      
+      .logo-naturaviva {
+        background-color: #3b82f6; /* Azul */
+      }
+      
+      .logo-solare {
+        background-color: #f59e0b; /* Amarelo */
+      }
         
 
 
