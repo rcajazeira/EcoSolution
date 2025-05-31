@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+
+    <title>Créditos de Carbono - EcoSolution</title>
+  </head>
+  <body class="bg-white">
+    <header class="bg-green-700 text-white p-4 shadow-md">
+      <div class="container mx-auto flex items-center justify-between">
+        <button class="mobile-menu-btn hidden text-2xl" onclick="toggleMenu()">
+          ☰
+        </button>
+
+        <div class="text-3xl font-bold logo-font flex items-center">
+          <a href="index.html" class="flex items-center">
+            <span class="material-icons text-4xl mr-2 text-green-300">eco</span>
+            <span>Eco<span class="text-green-300">Solution</span></span>
+          </a>
+        </div>
+
+        <nav class="main-nav flex items-center space-x-6 text-sm">
+          <a
+            class="hover:text-green-300 transition-colors"
+            href="quemsomos.html"
+            >Quem somos</a
+          >
+          <a
+            class="hover:text-green-300 transition-colors"
+            href="creditosdecarbono.html"
+            >Créditos de Carbono</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="mercado.html"
+            >Mercado</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="ranking.html"
+            >Ranking</a
+          >
+          <a class="hover:text-green-300 transition-colors" href="planos.html"
+            >Planos</a
+          >
+          <a
+            class="font-semibold border-b-2 border-green-300 pb-1 text-green-300"
+            href="index.html"
+            >Calculadora CO2</a
+          >
+        </nav>
+
+        <div class="flex items-center space-x-4 text-sm md:text-xs">
+          <div class="flex items-center space-x-1">
+            <a class="hover:text-green-300 text-xs font-medium" href="#">PT</a>
+            <span class="text-xs text-green-400">|</span>
+            <a
+              class="text-green-300 hover:text-white text-xs font-medium"
+              href="#"
+              >EN</a
+            >
+          </div>
+
+          <div class="relative">
+            <input
+              class="search-input bg-green-600 text-white placeholder-green-300 rounded-full py-2 px-4 text-xs focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-green-500 transition-colors w-48 md:w-full"
+              placeholder="Buscar..."
+              type="text"
+            />
+            <span
+              class="material-icons absolute right-3 top-1/2 transform -translate-y-1/2 text-green-300 text-base"
+              >search</span
+            >
+          </div>
+          <a
+            class="hover:text-green-300 font-medium transition-colors"
+            href="criar-conta.html"
+            >Criar Conta</a
+          >
+          <a
+            href="login.html"
+            class="bg-green-500 hover:bg-green-400 text-white py-2 px-4 rounded-full text-sm md:text-xs font-medium transition-colors"
+            >Login</a
+          >
+        </div>
+      </div>
+    </header>
+
+<!-- CONTEÚDO PRINCIPAL DA PÁGINA "CRÉDITOS DE CARBONO" -->
+<main>
+    <!-- Seção Hero -->
+    <section class="bg-cover bg-center py-20 text-white" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80');">
+        <!-- Você pode substituir a URL da imagem por uma mais específica sobre créditos de carbono ou projetos sustentáveis -->
+        <div class="bg-black bg-opacity-50 py-10">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Créditos de Carbono</h1>
+                <p class="text-xl md:text-2xl">Entendendo o Caminho para a Neutralidade e um Futuro Sustentável</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que são Créditos de Carbono? -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">O Que São Créditos de Carbono?</h2>
+            <div class="max-w-3xl mx-auto text-left md:text-center">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Créditos de carbono são certificados negociáveis que representam a redução ou remoção de uma tonelada de dióxido de carbono (CO<sub>2</sub>) da atmosfera, ou o equivalente em outros gases de efeito estufa (GEE). Eles funcionam como uma "moeda ambiental", permitindo que empresas e indivíduos compensem suas emissões inevitáveis investindo em projetos que beneficiam o clima.
+                </p>
+                <div class="flex justify-center my-8">
+                    <span class="material-icons text-6xl text-green-600">verified_user</span>
+                </div>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Esses créditos são gerados por projetos que comprovadamente reduzem emissões (como usinas de energia renovável ou projetos de eficiência energética) ou removem carbono da atmosfera (como reflorestamento e conservação florestal).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funcionam? -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-12 text-center">Como Funcionam?</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6 bg-green-50 rounded-lg shadow-lg">
+                    <span class="material-icons text-5xl text-green-600 mb-4">forest</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">1. Projetos de Redução</h3>
+                    <p class="text-gray-700 text-sm">
+                        Iniciativas como reflorestamento, energia renovável, e melhorias na eficiência energética são desenvolvidas com o objetivo de diminuir a quantidade de GEE na atmosfera.
+                    </p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-lg shadow-lg">
+                    <span class="material-icons text-5xl text-green-600 mb-4">fact_check</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">2. Verificação e Certificação</h3>
+                    <p class="text-gray-700 text-sm">
+                        Organismos independentes auditam esses projetos para quantificar a redução real de emissões. Se aprovados, os créditos de carbono correspondentes são emitidos e registrados.
+                    </p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-lg shadow-lg">
+                    <span class="material-icons text-5xl text-green-600 mb-4">storefront</span>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">3. Compensação de Emissões</h3>
+                    <p class="text-gray-700 text-sm">
+                        Empresas, governos ou indivíduos compram esses créditos para compensar suas próprias emissões, alcançando metas de neutralidade de carbono ou demonstrando responsabilidade ambiental.
+                    </p>
+                </div>
+            </div>
+            <p class="text-lg text-gray-700 mt-10 max-w-4xl mx-auto text-center leading-relaxed">
+                Esse mecanismo incentiva o investimento em tecnologias limpas e práticas sustentáveis, direcionando capital para projetos que de outra forma poderiam não ser financeiramente viáveis, ao mesmo tempo que ajuda a mitigar as mudanças climáticas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Por que são Importantes? -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-12 text-center">Por Que São Importantes?</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center p-6 bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+                    <span class="material-icons text-6xl text-green-500 mb-4">public</span>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-3">Combate às Mudanças Climáticas</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Incentivam a redução global de emissões de gases de efeito estufa, um passo crucial para limitar o aquecimento global e seus impactos.
+                    </p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+                    <span class="material-icons text-6xl text-green-500 mb-4">savings</span>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-3">Financiamento de Projetos Sustentáveis</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Geram receita que viabiliza projetos ambientais, como conservação de florestas, desenvolvimento de energias limpas e tecnologias de baixo carbono.
+                    </p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-xl hover:shadow-2xl transition-shadow">
+                    <span class="material-icons text-6xl text-green-500 mb-4">corporate_fare</span>
+                    <h3 class="text-2xl font-semibold text-green-700 mb-3">Responsabilidade Corporativa</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Permitem que empresas demonstrem compromisso com a sustentabilidade, melhorem sua imagem e atendam às expectativas de consumidores e investidores conscientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tipos de Projetos -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-12 text-center">Tipos de Projetos que Geram Créditos</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Reflorestamento" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Reflorestamento e Conservação</h3>
+                    <p class="text-sm text-gray-600 text-center">Plantar novas árvores ou proteger florestas existentes que absorvem CO<sub>2</sub> da atmosfera.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c29sYXIlMjBwYW5lbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Energia Renovável" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Energia Renovável</h3>
+                    <p class="text-sm text-gray-600 text-center">Desenvolvimento de fontes de energia limpa, como solar, eólica ou hidrelétrica, substituindo combustíveis fósseis.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-lg">
+                    <img src="https://imperiosolar.com.br/wp-content/uploads/2023/10/Empresas-que-utilizam-energia-solar-podem-se-tornar-lideres-em-sustentabilidade-e-adquirir-uma-vantagem-competitiva-no-mercado-1024x701.jpg" alt="Eficiência Energética" class="w-full h-48 object-cover rounded-md mb-4">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Eficiência Energética</h3>
+                    <p class="text-sm text-gray-600 text-center">Projetos que reduzem o consumo de energia em indústrias, edifícios ou transportes.</p>
+                </div>
+            </div>
+            <p class="text-lg text-gray-700 mt-10 max-w-4xl mx-auto text-center leading-relaxed">
+                Existem diversos outros tipos de projetos, incluindo captura de metano em aterros sanitários, agricultura de baixo carbono e tecnologias inovadoras de remoção de carbono. O fundamental é que contribuam para uma redução líquida e verificável das emissões de GEE.
+            </p>
+        </div>
+    </section>
+
+    <!-- A EcoSolution e os Créditos de Carbono -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold mb-8">A EcoSolution e os Créditos de Carbono</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto leading-relaxed">
+                Na EcoSolution, entendemos a importância dos créditos de carbono como uma ferramenta complementar na jornada para a sustentabilidade. Nossa plataforma ajuda você a <a href="index.html#carbonCalculator" class="font-semibold text-green-300 hover:underline">calcular sua pegada de carbono</a>, o primeiro passo essencial para entender seu impacto.
+            </p>
+            <p class="text-lg mb-10 max-w-3xl mx-auto leading-relaxed">
+                Embora o foco principal seja a redução direta de emissões, reconhecemos que a compensação via créditos de carbono pode ser uma estratégia valiosa. Estamos sempre explorando formas de conectar nossos usuários a projetos de compensação confiáveis e impactantes.
+            </p>
+            <a href="index.html#carbonCalculator" class="bg-white text-green-700 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 text-lg inline-flex items-center">
+                <span class="material-icons mr-2">calculate</span>
+                Calcule Sua Pegada de Carbono Agora
+            </a>
+             <a href="planos.html" class="bg-green-500 hover:bg-green-400 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-lg inline-flex items-center ml-0 mt-4 md:mt-0 md:ml-4">
+                <span class="material-icons mr-2">inventory_2</span>
+                Conheça Nossos Planos
+            </a>
+        </div>
+    </section>
+
+    <!-- Voltar para Home -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <a href="index.html" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 inline-flex items-center text-lg">
+                <span class="material-icons mr-2">arrow_back</span>
+                Voltar à Página Inicial
+            </a>
+        </div>
+    </section>
+</main>
+
+<!--  iniciando o rodapé -->
+     <footer class="bg-gray-800 text-gray-300 py-12">
+     <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            <!-- Coluna 1: Logo e Redes Sociais -->
+            <div class="text-center md:text-left">
+                <div class="text-3xl font-bold logo-font flex justify-center md:justify-start items-center mb-4">
+                    <a href="index.html" class="flex items-center text-white">
+                        <span class="material-icons text-4xl mr-2 text-green-400">eco</span>
+                        <span>Eco<span class="text-green-400">Solution</span></span>
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400 mb-6 md:mb-4">Liderando o caminho para um futuro sustentável com soluções inovadoras em pegada de carbono.</p>
+                <div class="flex space-x-4 justify-center md:justify-start">
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                         <img alt="Facebook icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFFr1P5D0h4u_JZra_-kIKrPNIjL4nM7yQWqtakuTpfQUJiyhkBm0CW-RBV7zpythuWSRWAC-3Wgz-bGgqylqmRWNF6ln2_Vdfwo0XhHN4ybszfMEMrL4ayJSIlN0cZxsfkzy4FDArvXtPll0yxnY5lkbgdicWfTDnZ1YTrB-WwmB2sS5q1tFuH3RK1F5gDIwVW4LyXzmSZoc-6mZ_R6hmaQ-shq-v7RtwEZiyeVD-jnPwETztbYvSAyl97EhyiEOB7YFm6_ANhwK8">
+                    </a>
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                        <img alt="Twitter icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_HOkPbg2UisC212XHLYNa5CDykAjXJDpk2KZT0YViSJ-tXjgULYtB1KTEh6OcY5VRoNV-pinz1BrWwZfqhwgBK_VIywPf6VvNnXYZ8GjztU8-Pdzt5KoQSbJ4v9Q2rm3g07NBFKbCeglDFcRUZg7zpRhZg5r_ltubYCr0EQGEpoRqA7COhBsapdDwhKDXC5FP6Wc2lISlJ8RG5A3aqXZzuwKi3ZysM-GWwG5NRnwbsaKu7cl-OVqc49qCsPhvSyxVO53uY5Jj6txy">
+                    </a>
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                        <img alt="Instagram icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEk6Fi-PqtPA_EkHhR0wfpaevuyop1Af1O-vactqxNgQ4qvMSe8l_OSaw03vTN6bKbm3u3OD5xm76vE_grEFAaA1xEJclUIRFGCK4mCtQVV7nx6TgMMkCOmBlxeCyq-I99UtI14itCV33muDk25sO7L44fkeM7_qJQ-8Mpt4xtD0gpBeKztFwv8xouv9JY_G0EfEz5qF7Tu9Jo5tVQZNkrRBNN9s1wwPjcVwV2BNV5wd5V7Eld2J9VjEkyeT-4pFVpDP1OQiS-qMBX">
+                    </a>
+                    <a class="text-gray-400 hover:text-white transition-colors" href="#">
+                        <img alt="LinkedIn icon" class="h-7 w-7 social-icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIfo9XP4wg3pElg5XxWcoJVch46YDaJLBKI7tQsMjQpn0s0g4o4mv4FNOB5h7BOPHMpClm3b_gZgbQuu5QqBamlsX6oG61uvx4opjREdeCkamcZrJPwXQzz2RFcs9wSNm0clF2mBq12ngmYhlu3riZHx1w4SZS9Iq7MqF-NmSAnyfqwP0AuMKCFn9OpJjCooe5U4NPxd15NkvgM-FNlDfmGXySo0OUrdze2YzhZwqyL8_0G2tTpMO6FQplY3efohVtTWhwz_DqZxeL">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Newsletter -->
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold text-white mb-6">Assine nossa newsletter</h4>
+                <form class="flex flex-col space-y-3 newsletter-form">
+                    <input class="bg-gray-700 text-gray-300 placeholder-gray-500 rounded-md py-2.5 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-gray-600 transition-colors" placeholder="Digite seu nome" type="text">
+                    <input class="bg-gray-700 text-gray-300 placeholder-gray-500 rounded-md py-2.5 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:bg-gray-600 transition-colors" placeholder="Digite seu email" type="email">
+                    <button class="bg-green-600 hover:bg-green-500 text-white py-2.5 px-4 rounded-md text-sm font-semibold transition-colors" type="submit">ENVIAR</button>
+                </form>
+            </div>
+
+            <!-- Coluna 3: Contato -->
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-semibold text-white mb-6">Contato</h4>
+                <div class="space-y-2">
+                    <p class="flex items-start justify-center md:justify-start">
+                        <span class="material-icons text-green-400 mr-2 text-sm">place</span>
+                        <span>Rua do Senac Casa do Comércio, 300,<br>Caminho das Árvores, Salvador - BA</span>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <span class="material-icons text-green-400 mr-2 text-sm">phone</span>
+                        <span>+55 71 3232-3000</span>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <span class="material-icons text-green-400 mr-2 text-sm">email</span>
+                        <span>contato@ecosolution.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+         <!-- Copyright e créditos -->
+        <div class="border-t border-gray-700 pt-8 text-center">
+            <div class="mb-6">
+                <p class="text-sm text-gray-400 mb-3">Idealizador: Rafael Cajazeira Programador Fullstack</p>
+                <a href="https://www.linkedin.com/in/rafael-cajazeira-a24314b9/" target="_blank" rel="noopener noreferrer" class="inline-block">
+                    <img src="desenv.jpg" alt="Logo Rafael Cajazeira Programador Fullstack" class="h-12 sm:h-14 md:h-16 mx-auto hover:opacity-80 transition-opacity">
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">EcoSolution © <span id="currentYear"></span> Todos os direitos reservados.</p>
+        </div>
+    </div>
+     </footer>
+
+     <!-- finalizando com botões -->
+    
+    <div class="fixed bottom-24 right-6 z-50 whatsapp-button">
+    <a href="https://wa.me/557132323000" rel="noopener noreferrer" target="_blank">
+        <img alt="WhatsApp icon" class="h-14 w-14 rounded-full shadow-xl cursor-pointer hover:opacity-80 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbOamQjb41njKk3pGtr9zBH6-fKyUUfHoT48OEtPdaeq-Z9wHqPTJRIV-e7evi3yHjsfccO-szqT2O_uuTrOSb6alw7dfhlTN-lAaoC83f8FIgSfCJwzgFwSeTd9rWqb5jTSpfivxyjW9KFLODNuS6SCcGJLtkxeqtP_l5h4x9U1mGPBX3wcErT4lAafFHnzyp3dCsyayxRRX6uQun5Jk_ToobJwEYYi-Ahe3WT2dsHJxo8NdTCVRzEiskeG3pjDNeukclNxNduS7m">
+    </a>
+</div>
+
+<button class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-xl flex items-center space-x-2 group transition-all duration-300 ease-in-out z-50 floating-button chat-button">
+    <span class="material-icons">chat</span>
+    <span class="text-sm hidden md:inline group-hover:max-w-xs group-hover:px-2 max-w-0 overflow-hidden transition-all duration-300 ease-in-out">Olá, posso ajudar?</span>
+</button>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".main-nav");
+        nav.classList.toggle("active");
+      }
+      //calculadora de CO2
+      // Função para alternar o menu mobile
+        function toggleMenu() {
+            const nav = document.querySelector('.main-nav');
+            nav.classList.toggle('active');
+        }
+        
+        // Função para calcular a pegada de carbono
+        function calculateCarbonFootprint() {
+            // Valores dos inputs
+            const transporte = parseFloat(document.getElementById('transporte').value) || 0;
+            const energia = parseFloat(document.getElementById('energia').value) || 0;
+            const alimentacao = parseFloat(document.getElementById('alimentacao').value) || 0;
+
+            // Fatores de emissão (exemplo)
+            const fatorTransporte = 0.2; // kg CO2e por km
+            const fatorEnergia = 0.5;    // kg CO2e por kWh
+            const fatorAlimentacao = 10; // kg CO2e por porção
+
+            // Cálculo
+            const total = 
+                (transporte * 20 * fatorTransporte) + // 20 dias úteis
+                (energia * fatorEnergia) +
+                (alimentacao * 4 * fatorAlimentacao); // 4 semanas no mês
+
+            // Exibir resultado
+            document.getElementById('totalFootprint').textContent = total.toFixed(2);
+            document.getElementById('resultadoCalculo').classList.remove('hidden');
+            
+            // Rolar suavemente para o resultado
+            document.getElementById('resultadoCalculo').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+          // Atualiza o ano atual no copyright
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Animação para o botão de chat
+    const chatButton = document.querySelector('.chat-button');
+    chatButton.addEventListener('click', function() {
+        alert('Olá! Como podemos ajudar você hoje?');
+    });
+    
+    // Validação simples do formulário de newsletter
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = this.querySelector('input[type="text"]');
+            const emailInput = this.querySelector('input[type="email"]');
+            
+            if (!nameInput.value.trim() || !emailInput.value.trim()) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
+            
+            alert('Obrigado por assinar nossa newsletter!');
+            this.reset();
+        });
+    }
+
+    </script>
+  </body>
+</html>
